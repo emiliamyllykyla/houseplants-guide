@@ -1,0 +1,79 @@
+.add > div,
+fieldset {
+  margin-bottom: 10px;
+}
+
+.add > div {
+  display: flex;
+}
+
+.add label,
+.add legend {
+  width: 300px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.add input[type="checkbox"] + label {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.add label[for="airPurifying"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.add fieldset {
+  border: none;
+  position: relative;
+  padding-left: 320px;
+}
+
+.add legend {
+  position: absolute;
+  left: 0;
+}
+
+textarea,
+input {
+  padding: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.add input[type="text"] {
+  width: 400px;
+}
+
+.add input[type="submit"] {
+  display: block;
+  margin-left: 320px;
+  width: 200px;
+  font-size: 1.2em;
+  background-color: gold;
+  border: 1px solid gold;
+  border-radius: 5px;
+  color: darkgoldenrod;
+}
+
+.add input[type="submit"]:hover {
+  background-color: khaki;
+  border: 1px solid khaki;
+  cursor: pointer;
+}
+
+.form-field-error {
+  color: red;
+  margin-left: 10px;
+  font-style: italic;
+}

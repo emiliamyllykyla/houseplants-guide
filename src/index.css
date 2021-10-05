@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: ghostwhite;
+  color: darkolivegreen;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: darkolivegreen;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.name:not(.name.scientific) {
+  text-transform: capitalize;
+}
+
+.scientific {
+  display: inline-block;
+}
+
+.scientific:first-letter {
+  text-transform: capitalize;
+}
+
+.delete-btn {
+  font-size: 1.2em;
+  padding: 5px 15px;
+  margin-bottom: 5px;
+  background-color: #dc3c3c;
+  border: 1px solid #dc3c3c;
+  border-radius: 5px;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #dc6464;
+  border: 1px solid #dc6464;
+  cursor: pointer;
+}
+
+.layout1 {
+  background: url("./images/landing.jpg") no-repeat scroll center center /
+    cover rgba(0, 0, 0, 0);
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.layout1 .heading {
+  color: black;
+  position: absolute;
+  top: 40vh;
+  left: 50vw;
+  margin-right: 30px;
+}
+
+.layout2 .page {
+  max-width: 85%;
+  min-height: calc(100vh - 90px);
+  padding: 40px 20px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .layout2 .page {
+    min-width: 100%;
+  }
+}

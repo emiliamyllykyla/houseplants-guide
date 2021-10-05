@@ -1,0 +1,47 @@
+.alert {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  padding: 10px 20px;
+}
+
+.alert-success {
+  border: 1px solid #d4ee88;
+  background-color: #d4ee88;
+}
+
+.alert-error {
+  border: 1px solid #dc6464;
+  background-color: #dc6464;
+  color: white;
+}
+
+.alert.fade-appear {
+  opacity: 0;
+  height: 0;
+  padding: 0 20px;
+  color: transparent;
+}
+
+.alert.fade-appear-active {
+  opacity: 1;
+  height: 45px;
+  padding: 10px 20px;
+  color: inherit;
+  transition: opacity 500ms, height 500ms, padding 500ms, color 1s;
+}
+
+.alert.fade-exit {
+  opacity: 1;
+  height: 45px;
+  padding: 10px 20px;
+  color: inherit;
+}
+
+.alert.fade-exit-active {
+  opacity: 0;
+  height: 0;
+  padding: 0 20px;
+  color: transparent;
+  transition: opacity 1s, height 1s, padding 1s, color 500ms;
+}

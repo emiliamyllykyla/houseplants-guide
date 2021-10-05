@@ -1,0 +1,65 @@
+.delete-plants-table {
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+}
+
+.delete-plants-table thead {
+  background-color: #f3f3f3;
+}
+
+.delete-plants-table th {
+  text-align: left;
+  padding: 15px 10px;
+}
+
+.delete-plants-table td {
+  height: 55px;
+  padding: 10px 10px;
+  display: table-cell;
+}
+
+.delete-plants-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.delete-plants-btn {
+  font-size: 0.9em;
+  padding: 5px 15px;
+  background-color: #dc3c3c;
+  border: 1px solid #dc3c3c;
+  border-radius: 5px;
+  color: white;
+}
+
+.delete-plants-btn:hover {
+  background-color: #dc6464;
+  border: 1px solid #dc6464;
+  cursor: pointer;
+}
+
+.delete-plants-table .fade-exit td {
+  opacity: 1;
+  height: 55px;
+  padding: 10px 10px;
+  font-size: inherit;
+}
+
+.delete-plants-table .fade-exit-active td {
+  opacity: 0;
+  height: 0;
+  padding: 0 10px;
+  font-size: 0;
+  transition: opacity 200ms, height 500ms, padding 500ms, font-size 500ms;
+}
+
+.delete-plants-table .fade-exit button {
+  padding: 5px 15px;
+  border: initial;
+}
+
+.delete-plants-table .fade-exit-active button {
+  padding: 0 15px;
+  border: 0;
+  transition: border 500ms, padding 500ms;
+}

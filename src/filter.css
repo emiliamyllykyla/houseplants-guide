@@ -1,0 +1,54 @@
+.filters {
+  width: 250px;
+  position: relative;
+}
+
+.filters .select-box input {
+  width: 100%;
+  cursor: initial;
+}
+
+.select-box {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 26%;
+  right: 10px;
+  font-size: 16px;
+}
+
+.filters label {
+  display: block;
+  padding-left: 10px;
+}
+
+.filters label:hover {
+ background-color: khaki;
+}
+
+.filters input {
+  margin-right: 7px;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  width: 100%;
+  margin-bottom: 5px;
+  border-bottom: 1px solid darkolivegreen;
+}
+
+.checkbox-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid olive;
+  border-top: 0;
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+}
