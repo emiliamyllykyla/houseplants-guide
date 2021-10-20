@@ -51,7 +51,9 @@ textarea {
   resize: vertical;
 }
 
-.add input[type="text"] {
+.add input[type="text"],
+.add input[type="url"],
+textarea {
   width: 400px;
 }
 
