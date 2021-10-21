@@ -1,15 +1,42 @@
-select,
-.filters .select-box input,
+.custom-select input,
 .search input {
   border: 1px solid darkolivegreen;
   color: darkolivegreen;
   padding: 5px;
   font-size: 18px;
   width: 250px;
+  height: 33px;
+  appearance: none;
+  cursor: pointer;
 }
 
-.sort label {
-  margin-right: 10px;
+.custom-select {
+  position: relative;
+}
+
+.custom-select-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid olive;
+  border-top: 0;
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  z-index: 1;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 26%;
+  right: 10px;
+  font-size: 16px;
+}
+
+.search input {
+  max-width: 200px;
+  cursor: initial;
 }
 
 .filters,
@@ -67,7 +94,7 @@ select,
 
 @media only screen and (max-width: 900px) {
   .options {
-    flex-direction: column;    
+    flex-direction: column;
   }
 
   .options > * {
@@ -76,6 +103,9 @@ select,
 
   .sort {
     text-align: right;
-    display: block;
+  }
+
+  .search input {
+    max-width: unset;
   }
 }

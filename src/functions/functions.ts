@@ -3,7 +3,7 @@ import { Data } from "../types";
 // Sorts data alphabetically
 export const sort = (data: Data, sortBy: string, desc: boolean) => {
   const sorted = data.sort((a, b) =>
-    a.data()[sortBy] > b.data()[sortBy] ? 1 : -1
+    a.data()[sortBy].toLowerCase() > b.data()[sortBy].toLowerCase() ? 1 : -1
   );
   return desc ? sorted.reverse() : sorted;
 };

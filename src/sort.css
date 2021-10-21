@@ -1,0 +1,13 @@
+.sort label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.selected, 
+.sort-option:hover {
+  background-color: khaki;
+}
+
+.sort-option {
+  cursor: pointer;
+}

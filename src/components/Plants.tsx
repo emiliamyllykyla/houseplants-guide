@@ -1,10 +1,11 @@
-import { ChangeEvent, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { houseplants } from "../firebase";
 import { usePromise } from "../usePromise";
 import { Data } from "../types";
 import { sort, filter, search } from "../functions/functions";
 import PlaceholderImg from "../images/placeholder.jpg";
+import Sort from "./Sort";
 import Filter from "./Filter";
 import Search from "./Search";
 import Alert from "./Alert";
@@ -36,9 +37,6 @@ function Plants() {
     }
   }, [activeFilters, desc, query]);
 
-  const handleChange = (e: ChangeEvent<HTMLSelectElement>) =>
-    setDesc(e.target.value === "descending");
-
   if (!displayedData) {
     return (
       <div className="page">
@@ -54,13 +52,7 @@ function Plants() {
         <div className="heading">
           <h1>All Plants</h1>
           <div className="options">
-            <form className="sort">
-              <label htmlFor="sort">Sort by:</label>
-              <select id="sort" onChange={handleChange}>
-                <option value="ascending">English name: A-Z</option>
-                <option value="descending">English name: Z-A</option>
-              </select>
-            </form>
+            <Sort setDesc={setDesc} />
             <Filter filters={activeFilters} setFilters={setActiveFilters} />
             <Search query={query} setQuery={setQuery} />
           </div>

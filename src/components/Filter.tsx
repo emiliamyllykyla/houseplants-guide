@@ -19,14 +19,14 @@ const Filter = ({ filters, setFilters }: FilterProps) => {
   return (
     <OutsideClickHandler setVisible={setVisible}>
       <form className="filters">
-        <div className="select-box" onClick={() => setVisible(!visible)}>
+        <div className="custom-select" onClick={() => setVisible(!visible)}>
           <input type="text" value="Filters" readOnly />
           <span className="arrow">
             <FaChevronDown />
           </span>
         </div>
         {visible && (
-          <div className="checkbox-container">
+          <div className="custom-select-options">
             <fieldset>
               <legend>Water</legend>
               <label className="filter">
